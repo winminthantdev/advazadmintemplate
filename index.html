@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ADVAZ Admin Panel</title>
+    <!-- fa icon -->
+    <link href="./assets/img/fav/logo.png" rel="icon" type="favicon/png>" sizes="16x16" />
+
+    <!-- bootstrap css1 js1 -->
+    <link rel="stylesheet" href="./assets/libs/bootstrap-5.2.3-dist/css/bootstrap.min.css" type="text/css" />
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery ui css1 js1 -->
+    <link rel="stylesheet" href="./assets/libs/jquery-ui-1.13.2.custom/jquery-ui.css" type="text/css" />
+
+    <!-- lightbox2 css1 js1 -->
+    <link rel="stylesheet" href="./assets/libs/lightbox2-dev/dist/css/lightbox.min.css" type="text/css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <div class="wrappers">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Start Nav Menu -->
+        <div id="nav">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Start Left Navbar -->
+              <div class="col-lg-2 col-md-3 vh-100 fixed-top overflow-auto leftsidebars">
+                <ul class="navbar-nav flex-column pt-3">
+                  <div class="sitelogos"><img src="./assets/img/fav/logo.png" width="32px" alt="sitelogo" /><span>advaz</span></div>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks currents"><i class="fa-solid fa-gauge me-2"></i>Dashboard</a>
+                  </li>
+                  <li class="navbar-item navbar-categories text-uppercase">Order Management</li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-cart-arrow-down me-2"></i>Order</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-users me-2"></i>Customer</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-calendar me-2"></i>Pricing Plan</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-square-poll-vertical me-2"></i>Seller Report</a>
+                  </li>
+                  <li class="navbar-item navbar-categories text-uppercase">Listings Management</li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-clipboard-list me-2"></i>Listing</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-table-cells-large me-2"></i>Category</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-brands fa-nfc-symbol me-2"></i>Custom Field</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-gem me-2"></i>Brand</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-list-check me-2"></i>Listing Report Category</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-list-ul me-2"></i>Listing Report List</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-group-arrows-rotate me-2"></i>Affiliate System <i class="fas fa-angle-left mores"></i></a>
+                  </li>
+                  <li class="navbar-item navbar-categories text-uppercase">CMS Settings</li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-gears me-2"></i>CMS</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-regular fa-newspaper me-2"></i>Newletter</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-brands fa-blogger me-2"></i>Blogs</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-comment-dots me-2"></i>Testimonials</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-person-circle-question me-2"></i>FAQ</a>
+                  </li>
+                  <li class="navbar-item navbar-categories text-uppercase">Website Settings</li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-sliders me-2"></i>Preferences</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-cookie-bite me-2"></i>Cookies Alert</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-brands fa-searchengin me-2"></i>SEO Settings</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-code me-2"></i>Custom CSS & JS</a>
+                  </li>
+                  <li class="navbar-item navbar-categories text-uppercase">General Settings</li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-gear me-2"></i>Site Settings</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-users me-2"></i>User & Role Manage</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-solid fa-envelope-open me-2"></i>SMTP</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="javascript:void(0);" class="nav-link fw-bold sidebarlinks"><i class="fa-regular fa-credit-card me-2"></i>Payment Gateway <i class="fas fa-angle-left mores"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End Left Navbar -->
+
+              <!-- Start Top Navbar -->
+              <div class="col-lg-10 col-md-9 fixed-top ms-auto topnavbars">
+                <div class="row">
+                  <div class="navbar navbar-expand navbar-light bg-white shadow">
+                    <div class="ps-3 me-auto titles"><i class="fa-solid fa-gauge me-2"></i>Dashboard</div>
+                    <!-- Start Language & User Account -->
+                    <ul class="navbar-nav pe-3">
+                      <li class="navbar-item topbaricons"><i class="fas fa-plus"></i></li>
+                      <li class="navbar-item topbaricons"><i class="fa-solid fa-language"></i></li>
+                      <li class="navbar-item topbaricons"><i class="fa-solid fa-moon"></i></li>
+                      <li class="navbar-item topbaricons"><img src="./assets/img/users/user1.jpg" class="rounded-circle" width="20px" alt="" /></li>
+                    </ul>
+                    <!-- Start Language & User Account -->
+                    <!-- Start Mobile Close btn -->
+                    <button type="button" class="close-btns" data-bs-toggle="collapse" data-bs-target="#nav"><i class="fa-solid fa-xmark"></i></button>
+                    <!-- End Mobile Close btn -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Top Navbar -->
+            </div>
+          </div>
+        </div>
+        <!-- End Nav Menu -->
+      </nav>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Content Section -->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-10 col-md-9 mt-lg-5 mt-md-3 ms-auto">
+            <div class="row mb-3">
+              <div class="container-fluid">
+                <div class="card mt-4">
+                  <div class="card-body">
+                    <div class="row mb-2">
+                      <div class="col-lg-3 col-md-6 bg-light mb-2">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-auto px-1 py-2">
+                                <div class="iconboxs"><i class="fa-solid fa-users-line"></i></div>
+                              </div>
+                              <div class="col px-1">
+                                <p class="m-0">Active Listings</p>
+                                <p class="fw-bold m-0">531</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 bg-light mb-2">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-auto px-1 py-2">
+                                <div class="iconboxs"><i class="fa-solid fa-bookmark"></i></div>
+                              </div>
+                              <div class="col px-1">
+                                <p class="m-0">Total Listings</p>
+                                <p class="fw-bold m-0">483</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 bg-light mb-2">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-auto px-1 py-2">
+                                <div class="iconboxs"><i class="fa-solid fa-list-ul"></i></div>
+                              </div>
+                              <div class="col px-1">
+                                <p class="m-0">Panding Listings</p>
+                                <p class="fw-bold m-0">562</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 bg-light mb-2">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-auto px-1 py-2">
+                                <div class="iconboxs"><i class="fa-solid fa-rectangle-list"></i></div>
+                              </div>
+                              <div class="col px-1">
+                                <p class="m-0">Solid Listings</p>
+                                <p class="fw-bold m-0">785</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-lg-3 col-md-6 bg-light mb-2">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-auto px-1 py-2">
+                                <div class="iconboxs"><i class="fa-solid fa-circle-dollar-to-slot"></i></div>
+                              </div>
+                              <div class="col px-1">
+                                <p class="m-0">Earnings</p>
+                                <p class="fw-bold m-0">620</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 bg-light mb-2">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-auto px-1 py-2">
+                                <div class="iconboxs"><i class="fa-solid fa-users"></i></div>
+                              </div>
+                              <div class="col px-1">
+                                <p class="m-0">Total Customers</p>
+                                <p class="fw-bold m-0">824</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 bg-light mb-2">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-auto px-1 py-2">
+                                <div class="iconboxs"><i class="fa-solid fa-user-check"></i></div>
+                              </div>
+                              <div class="col px-1">
+                                <p class="m-0">Verified Customers</p>
+                                <p class="fw-bold m-0">791</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 bg-light mb-2">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-auto px-1 py-2">
+                                <div class="iconboxs"><i class="fa-solid fa-pen-to-square"></i></div>
+                              </div>
+                              <div class="col px-1">
+                                <p class="m-0">Total Blog Post</p>
+                                <p class="fw-bold m-0">787</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Start Earning & Locations Section -->
+            <div class="row mb-3">
+              <!-- Start Earning Section -->
+              <div class="col-lg-7 mb-2">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <h6 class="card-title mb-0">Earnings</h6>
+                    <select name="" id="" class="form-select w-auto" aria-label="View Type">
+                      <option disabled>View Type</option>
+                      <option value="1">This Week</option>
+                      <option value="2">This Month</option>
+                      <option value="3" selected>This Year</option>
+                    </select>
+                  </div>
+                  <div class="card-body overflow-auto">
+                    <!-- <div id="columnchart_values"></div> -->
+                    <canvas id="myBarChart"></canvas>
+                  </div>
+                </div>
+              </div>
+              <!-- End Earning Section -->
+
+              <!-- Start Popular Locations Section -->
+              <div class="col-lg-5">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-between align-items-center flex-nowrap">
+                    <h6 class="card-title mb-0">Popular Locations</h6>
+
+                    <select name="" id="" class="form-select w-auto" aria-label="View Type">
+                      <option disabled>View Type</option>
+                      <option value="1">This Week</option>
+                      <option value="2">This Month</option>
+                      <option value="3">This Year</option>
+                      <option value="4" selected>All Time</option>
+                    </select>
+                  </div>
+                  <div class="card-body overflow-auto">
+                    <canvas id="myChart" style="max-height: 434px"></canvas>
+                  </div>
+                </div>
+              </div>
+              <!-- Start Popular Locations Section -->
+            </div>
+            <!-- Start Earning & Locations Section -->
+
+            <!-- Start Listing & Registered User Section -->
+            <div class="row mb-3">
+              <!-- Start Latest Listings -->
+              <div class="col-lg-6 mb-2">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <h6 class="card-title">Latest Listings</h6>
+                    <a href="javascript:void(0);">View All</a>
+                  </div>
+                  <div class="card-body overflow-auto custom-scrollbars" style="max-height: 320px">
+                    <div class="row align-items-center bg-light p-2 mb-1">
+                      <div class="col-6 d-flex align-items-center">
+                        <img src="./assets/img/furniture/1.jpg" class="rounded-circle" width="40px" alt="product1" />
+                        <h6 class="m-0">Kids' Toys And Games At Unbeatable Prices</h6>
+                      </div>
+                      <div class="col-6 d-flex justify-content-between align-items-center">
+                        <div class="">
+                          <p class="m-0">Price</p>
+                          <h6 class="m-0">$5.22</h6>
+                        </div>
+                        <p class="text-primary m-0">Acitve</p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center bg-light p-2 mb-1">
+                      <div class="col-6 d-flex align-items-center">
+                        <img src="./assets/img/furniture/2.jpg" class="rounded-circle" width="40px" alt="product2" />
+                        <h6 class="m-0">High-Performance Lptops For Work Or Gaming</h6>
+                      </div>
+                      <div class="col-6 d-flex justify-content-between align-items-center">
+                        <div class="">
+                          <p class="m-0">Price</p>
+                          <h6 class="m-0">$11.70</h6>
+                        </div>
+                        <p class="text-primary m-0">Acitve</p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center bg-light p-2 mb-1">
+                      <div class="col-6 d-flex align-items-center">
+                        <img src="./assets/img/furniture/3.jpg" class="rounded-circle" width="40px" alt="product3" />
+                        <h6 class="m-0">Latest Tech Gagets At Discounted Prices</h6>
+                      </div>
+                      <div class="col-6 d-flex justify-content-between align-items-center">
+                        <div class="">
+                          <p class="m-0">Price</p>
+                          <h6 class="m-0">$8.99</h6>
+                        </div>
+                        <p class="text-primary m-0">Acitve</p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center bg-light p-2 mb-1">
+                      <div class="col-6 d-flex align-items-center">
+                        <img src="./assets/img/furniture/4.jpg" class="rounded-circle" width="40px" alt="product4" />
+                        <h6 class="m-0">Affordable Smartphones With Top Features</h6>
+                      </div>
+                      <div class="col-6 d-flex justify-content-between align-items-center">
+                        <div class="">
+                          <p class="m-0">Price</p>
+                          <h6 class="m-0">$11.70</h6>
+                        </div>
+                        <p class="text-primary m-0">Acitve</p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center bg-light p-2 mb-1">
+                      <div class="col-6 d-flex align-items-center">
+                        <img src="./assets/img/furniture/5.jpg" class="rounded-circle" width="40px" alt="product5" />
+                        <h6 class="m-0">Stylish Furniture For Your Living Room</h6>
+                      </div>
+                      <div class="col-6 d-flex justify-content-between align-items-center">
+                        <div class="">
+                          <p class="m-0">Price</p>
+                          <h6 class="m-0">$45.50</h6>
+                        </div>
+                        <p class="text-primary m-0">Acitve</p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center bg-light p-2 mb-1">
+                      <div class="col-6 d-flex align-items-center">
+                        <img src="./assets/img/furniture/6.jpg" class="rounded-circle" width="40px" alt="product6" />
+                        <h6 class="m-0">Modern Gadgets For Everyday Use</h6>
+                      </div>
+                      <div class="col-6 d-flex justify-content-between align-items-center">
+                        <div class="">
+                          <p class="m-0">Price</p>
+                          <h6 class="m-0">$99.99</h6>
+                        </div>
+                        <p class="text-primary m-0">Acitve</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Latest Listings -->
+
+              <!-- Start Latest Registered Users -->
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <h6 class="card-title">Latest Listings</h6>
+                    <a href="javascript:void(0);">View All</a>
+                  </div>
+                  <div class="card-body overflow-auto custom-scrollbars " style="max-height: 320px">
+                    <table class="table ">
+                      <thead class="bg-light">
+                        <tr>
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th>Since</th>
+                        </tr>
+                      </thead>
+
+                        <tbody>
+                          <tr>
+                            <td><img src="./assets/img/users/user1.jpg" class="rounded-circle" width="24px" alt="" /><span class="h6 ms-2">Aung Aung</span></td>
+                            <td>aungaung@gmail.com</td>
+                            <td>July 28, 2024</td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/img/users/user2.jpg" class="rounded-circle" width="24px" alt="" /><span class="h6 ms-2">Maung Maung</span></td>
+                            <td>maungmaung@gmail.com</td>
+                            <td>July 28, 2024</td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/img/users/user3.jpg" class="rounded-circle" width="24px" alt="" /><span class="h6 ms-2">Kyaw Kyaw</span></td>
+                            <td>kyawkyaw@gmail.com</td>
+                            <td>July 24, 2024</td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/img/users/client1.jpg" class="rounded-circle" width="24px" alt="" /><span class="h6 ms-2">Tun Tun</span></td>
+                            <td>tuntun@gmail.com</td>
+                            <td>July 22, 2024</td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/img/users/client2.jpg" class="rounded-circle" width="24px" alt="" /><span class="h6 ms-2">Samuel Young</span></td>
+                            <td>shawnce@att.com</td>
+                            <td>July 22, 2024</td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/img/users/client3.jpg" class="rounded-circle" width="24px" alt="" /><span class="h6 ms-2">Vita Glow</span></td>
+                            <td>hmbrand@me.com</td>
+                            <td>July 21, 2024</td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/img/users/agen-s-3-1.jpg" class="rounded-circle" width="24px" alt="" /><span class="h6 ms-2">Ava Jones</span></td>
+                            <td>ilyaz@sbcglobal.net</td>
+                            <td>July 20, 2024</td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/img/users/agen-s-3-2.jpg" class="rounded-circle" width="24px" alt="" /><span class="h6 ms-2">Aung Aung</span></td>
+                            <td>aungaung@gmail.com</td>
+                            <td>July 20, 2024</td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/img/users/agen-s-3-3.jpg" class="rounded-circle" width="24px" alt="" /><span class="h6 ms-2">Aung Aung</span></td>
+                            <td>aungaung@gmail.com</td>
+                            <td>July 19, 2024</td>
+                          </tr>
+                        </tbody>
+                      
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- End Latest Registered Users -->
+            </div>
+            <!-- End Listing & Registered User Section -->
+
+            <!-- Start Transaction Section -->
+             <div class="row mb-3">
+              <div class="container-fluid">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <h6 class="card-title">Latest Transaction</h6>
+                    <a href="javascript:void(0);">View All</a>
+                  </div>
+                  <div class="card-body">
+                    <table class="table">
+                      <thead class="bg-light">
+                        <tr class="text-center">
+                          <th class="text-start">Customer</th>
+                          <th>Amount</th>
+                          <th>Plan Name</th>
+                          <th>Payment Type</th>
+                          <th>Created Time</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="text-center">
+                          <td class="text-start"><img src="./assets/img/users/agen-s-3-2.jpg" class="rounded-circle" width="24px" alt="customer1" /> <span class="h6 ms-2">Ava Jones</span></td>
+                          <td>$299</td>
+                          <td><p class="text-success fw-bold">Active</p></td>
+                          <td>VISA</td>
+                          <td>July 28, 2024</td>
+                          <td><a href="javascript:void(0);" class="text-dark"><i class="fa-solid fa-ellipsis"></i></a></td>
+                        </tr>
+                        <tr class="text-center">
+                          <td class="text-start"><img src="./assets/img/users/agen-s-3-1.jpg" class="rounded-circle" width="24px" alt="customer1" /> <span class="h6 ms-2">Aung Aung</span></td>
+                          <td>$199</td>
+                          <td><p class="text-success fw-bold">Active</p></td>
+                          <td>MPU</td>
+                          <td>July 28, 2024</td>
+                          <td><a href="javascript:void(0);" class="text-dark"><i class="fa-solid fa-ellipsis"></i></a></td>
+                        </tr>
+                        <tr class="text-center">
+                          <td class="text-start"><img src="./assets/img/users/agen-s-3-3.jpg" class="rounded-circle" width="24px" alt="customer1" /> <span class="h6 ms-2">Vita Glow</span></td>
+                          <td>$99</td>
+                          <td><p class="text-success fw-bold">Active</p></td>
+                          <td>VISA</td>
+                          <td>July 28, 2024</td>
+                          <td><a href="javascript:void(0);" class="text-dark"><i class="fa-solid fa-ellipsis"></i></a></td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+             </div>
+            <!-- End Transaction Section -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Content Section -->
+
+    <!-- bootsrtap css1 js1 -->
+    <script src="./assets/libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <!-- jquery js1 -->
+    <script src="./assets/libs/jquery/jquery-3.7.1.min.js"></script>
+    <!-- Chart js js1  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Justgage js1 -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+    <!-- google chart js1  -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- jquery ui css1 js1 -->
+    <script src="./assets/libs/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <!-- lightbox2 css1 js1 -->
+    <script src="./assets/libs/lightbox2-dev/dist/js/lightbox.min.js"></script>
+    <!-- custom js -->
+    <script src="./js/app.js" type="text/javascript"></script>
+  </body>
+</html>

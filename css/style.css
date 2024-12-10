@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --primary-color: #073d34;
+  --secondary-color: ;
+  --fruit-color: ;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12px;
+  background-color: #f4f4f4;
+
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start Navbar */
+
+/* Start Left Navbar */
+.sitelogos {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 8px;
+}
+
+@media (max-width: 767px) {
+  .sitelogos {
+    padding-top: 50px;
+  }
+  .close-btns {
+    display: inline-block;
+  }
+}
+
+.leftsidebars {
+  background-color: var(--primary-color);
+  color: #f4f4f4;
+}
+
+.leftsidebars a {
+  color: #f4f4f4;
+  padding: 16px;
+  margin-bottom: 4px;
+
+  transition: all 0.5s;
+}
+
+.leftsidebars a:hover{
+  background-color: #f4f4f4;
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
+.sidebarlinks.currents{
+    background-color: #f4f4f4;
+  color: var(--primary-color);
+}
+
+.leftsidebars .sidebarlinks {
+  position: relative;
+}
+
+.leftsidebars .sidebarlinks .mores {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+/* End Left Navbar */
+
+/* Start Top Navbar */
+.topbaricons {
+  width: 24px;
+  height: 24px;
+  background-color: #eee;
+  color: #777;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
+  margin: 4px;
+
+  cursor: pointer;
+}
+
+/* Start Mobile Close btn */
+.close-btns {
+  border: none;
+  background-color: transparent;
+  padding-right: 24px;
+
+  display: none;
+}
+.close-btns:hover {
+  color: red;
+}
+
+@media (max-width: 767px) {
+  .close-btns {
+    display: inline-block;
+  }
+}
+/* End Mobile Close btn */
+/* End Top Navbar */
+
+/* Start Navbar  */
+
+/* Start Content Section */
+.iconboxs {
+  width: 32px;
+  height: 32px;
+  background-color: #eee;
+  color: #777;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 32px;
+}
+
+/* Start Custom Scroll Bar */
+
+.custom-scrollbars::-webkit-scrollbar {
+  width: 2px;
+}
+
+.custom-scrollbars::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbars::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 2px;
+}
+
+.custom-scrollbars::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* End Custom Scroll Bar */
+
+/* End Content Section */
